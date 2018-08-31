@@ -1,0 +1,274 @@
+body {
+  line-height: 1.65;
+}
+.container {
+  margin: 0 auto;
+  width: 1242px;
+}
+h1 {
+  margin: 0 auto;
+}
+nav {
+  margin: 2rem 0;
+}
+.vision {
+  margin: -2rem auto 4rem;
+}
+.container section,
+.container header,
+.container footer {
+  line-height: 0;
+  /* margin: 0 auto; */
+  text-align: center;
+}
+.container a {
+  display: block;
+  line-height: 0;
+}
+.container p {
+  line-height: 1.65;
+}
+.pages {
+  background: url('img/00_03-0.png') no-repeat;
+  margin: 4rem auto 0;
+  padding: 8rem 10rem 4rem;
+}
+.pages .row {
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+}
+.recruit {
+  margin: 4rem auto;
+}
+footer {
+  margin: 0 auto;
+}
+
+.message .greeting {
+  margin: 0 auto 5rem;
+  width: 80%;
+  /* text-align: center; */
+}
+.message .row {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: space-evenly;
+}
+.text-content {
+  display: flex;
+  box-sizing: border-box;
+  text-align: center;
+}
+.text-shadow {
+  margin: 0 auto -10px;
+}
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  border-bottom: 10px solid rgba(238,227,8,0.8);
+  margin: 2rem auto;
+  font-size: 1.76em;
+  font-weight: 400;
+  line-height: 0.5;
+  letter-spacing: 0.2em;
+}
+.message .greeting h3 {
+  flex-basis: 90%;
+  font-family: 'Times New Roman', Times, serif;
+}
+.message .greeting .article {
+  flex-basis: 60%;
+  font-size: 95%;
+  line-height: 1.4;
+}
+.message .greeting  p {
+  margin: 0.5rem 0 0.8rem;
+}
+.message .greeting ol {
+  padding-left: 1.4em;
+  margin: 0;
+}
+.message .greeting .ceo {
+  flex-basis: 20%;
+  text-align: right;
+}
+.company .undef {
+  margin: 5rem auto 0;
+}
+.business .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 67.5%;
+  margin: 2rem auto 4rem;
+}
+.business h3 {
+  flex-basis: 100%;
+}
+.works .row {
+  line-height: 1.65;
+}
+.works .row,
+.credentials .row,
+.equipments .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+  width: 57.5%;
+}
+dl {
+  line-height: 1.65;
+}
+.works dl {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 90%;
+  margin: 0 auto;
+  width: 57.5%;
+}
+.company dl {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 90%;
+  margin: 2rem auto;
+  width: 67.5%;
+}
+.contact dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 4rem;
+  width: 67.5%;
+}
+.contact dl div,
+.works dl div,
+.company dl div {
+  display: inline-flex;
+  flex-basis: 100%;
+  padding: 0.5rem 0;
+  text-align: left;
+}
+.works dl div:nth-child(odd) {
+  background: #E4E5F0;
+}
+.works dl dt {
+  flex-basis: 70%;
+  padding-left: 1rem;
+}
+.works dl dt i {
+  color: #134A8C;
+  margin-right: 0.5rem;
+}
+.works dl dd {
+  flex-basis: 30%;
+}
+.company dl div,
+.contact dl div {
+  border-width: 2px 0 0;
+  border-color: #ccc;
+  border-style: solid;
+  padding: 0.75rem 0;
+}
+.company dl dt,
+.contact dl dt {
+  flex-basis: 30%;
+  padding-left: 2rem;
+}
+.company dl dd,
+.contact dl dd {
+  flex-basis: 70%;
+}
+.company dl dd ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.company dl dd ul.worker {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.company dl dd ul.worker li {
+  flex-basis: 50%;
+}
+.company dl dd ul.business li:before {
+  content: "1. ";
+}
+p.right {
+  font-size: 85%;
+  margin: 0 auto 4rem;
+  text-align: right;
+}
+.works p,
+.credentials p,
+.equipments p {
+  line-height: 1;
+  text-align: left;
+  width: 100%;
+}
+.equipments table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 90%;
+  line-height: 2;
+  margin: 0 auto;
+  width: 57.5%;
+}
+.equipments thead {
+  background: #B81B25;
+  color: white;
+}
+.equipments thead td {
+  border: 1px solid #666;
+}
+.equipments th {
+  border: 1px solid #666;
+  background: #F1E0E5;
+  vertical-align: top;
+}
+.equipments tbody tr:nth-child(even){
+background: #E6E6E5;
+}
+.equipments tbody td {
+  border: 1px solid #666;
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.recruit-page .row {
+  margin: 4rem auto 6rem;
+  width: 67.5%;
+}
+.contact .row {
+  text-align: left;
+  margin: 2rem auto;
+  width: 67.5%;
+}
+.contact .btnbox {
+  justify-content: center;
+}
+.contact input[type=text],
+.contact input[type=email],
+.contact textarea {
+  border: 1px solid #999;
+  line-height: 1.5;
+  width: 90%;
+}
+.contact input[type=radio] {
+  margin: 0 0.5rem;
+}
+.contact input[type=submit] {
+  background: #333;
+  color: white;
+  letter-spacing: 0.25rem;
+  padding: 1rem 3rem;
+}
+.contact input#zipcode1 {
+  width: 10%;
+}
+.contact input#zipcode2 {
+  width: 15%;
+}
+.contact span.required {
+  font-size: 90%;
+  color: #01A9CF;
+}
