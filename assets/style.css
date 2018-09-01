@@ -34,13 +34,18 @@ nav {
 }
 .pages {
   background: url('img/00_03-0.png') no-repeat;
+  background-size: 100%;
   margin: 4rem auto 0;
   padding: 8rem 10rem 4rem;
+  text-align: center;
 }
 .pages .row {
   display: flex;
   justify-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.pages .row div {
+  flex-basis: 27.5%;
 }
 .recruit {
   margin: 4rem auto;
