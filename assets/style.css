@@ -1,9 +1,13 @@
 body {
   line-height: 1.65;
 }
+img {
+  max-width: 100%;
+}
 .container {
   margin: 0 auto;
-  width: 1242px;
+  max-width: 1242px;
+  width: 100;
 }
 h1 {
   margin: 0 auto;
@@ -271,4 +275,21 @@ background: #E6E6E5;
 .contact span.required {
   font-size: 90%;
   color: #01A9CF;
+}
+
+@media (max-width: 1240px) {
+  .business .row {
+    width: 80%;
+  }
+  .works .row,
+  .credentials .row,
+  .equipments .row,
+  .contact .row {
+    width: 70%;
+  }
+  .works dl,
+  .credentials dl,
+  .equipments table {
+    width: 70%;
+  }
 }
