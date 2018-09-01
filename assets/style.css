@@ -1,4 +1,6 @@
 body {
+  font-size: 85%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.65;
 }
 img {
@@ -13,10 +15,33 @@ h1 {
   margin: 0 auto;
 }
 nav {
-  margin: 2rem 0;
+  margin: 3rem auto 5rem;
+}
+nav ul {
+  display: flex;
+  font-size: 88%;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+nav ul li {
+  border: solid #666;
+  border-width: 0 1px 0 0;
+  padding: 1rem 1.25rem;
+}
+nav ul li:first-child {
+  border-width: 0 1px 0 1px;
+}
+nav ul li.active {
+  background: #00AACF;
+}
+nav ul a {
+  color: #222;
+  font-weight: bold;
+  text-decoration: none;
 }
 .vision {
-  margin: -2rem auto 4rem;
+  margin: 0 auto 4rem;
 }
 .container section,
 .container header,
@@ -99,7 +124,7 @@ h2 {
   margin: 0;
 }
 .message .greeting .ceo {
-  flex-basis: 20%;
+  flex-basis: 25%;
   text-align: right;
 }
 .company .undef {
@@ -283,8 +308,28 @@ background: #E6E6E5;
 }
 
 @media (max-width: 1240px) {
+  nav {
+    max-width: 80%;
+  }
+  nav ul {
+    flex-wrap: wrap;
+  }
+  .pages {
+    padding: 4rem;
+  }
+  .pages .row {
+    max-width: 90%;
+    margin: 2.5vw auto;
+  }
+  .pages .row div {
+    flex-basis: 27.5%;
+  }
   .business .row {
     width: 80%;
+  }
+  .container section.business {
+    max-width: 80%;
+    margin: 0 auto;
   }
   .works .row,
   .credentials .row,
@@ -296,5 +341,8 @@ background: #E6E6E5;
   .credentials dl,
   .equipments table {
     width: 70%;
+  }
+  .recruit {
+    max-width: 80%;
   }
 }
