@@ -33,7 +33,7 @@ nav ul li:first-child {
   border-width: 0 1px 0 1px;
 }
 nav ul li.active {
-  background: #00AACF;
+  background: #68eaf9;
 }
 nav ul a {
   color: #222;
@@ -61,19 +61,20 @@ nav ul a {
   background: url('img/00_03-0.png') no-repeat;
   background-size: 100%;
   margin: 4rem auto 0;
-  padding: 8rem 10rem 4rem;
+  padding: 7vw 15vw 2vw;
   text-align: center;
 }
 .pages .row {
   display: flex;
   justify-items: center;
   justify-content: space-between;
+  align-content: center;
 }
 .pages .row div {
   flex-basis: 27.5%;
 }
 .recruit {
-  margin: 4rem auto;
+  margin: 5vw auto;
 }
 footer {
   margin: 0 auto;
@@ -170,13 +171,15 @@ dl {
 }
 .contact dl {
   display: flex;
+  font-size: 90%;
   flex-wrap: wrap;
   margin: 0 auto 4rem;
   width: 67.5%;
 }
 .contact dl div,
 .works dl div,
-.company dl div {
+.company dl div,
+.recruit-page dl div {
   display: inline-flex;
   flex-basis: 100%;
   padding: 0.5rem 0;
@@ -185,7 +188,8 @@ dl {
 .works dl div:nth-child(odd) {
   background: #E4E5F0;
 }
-.works dl dt {
+.works dl dt,
+.recruit-page dl dd {
   flex-basis: 70%;
   padding-left: 1rem;
 }
@@ -197,22 +201,28 @@ dl {
   flex-basis: 30%;
 }
 .company dl div,
-.contact dl div {
+.contact dl div,
+.recruit-page dl div {
   border-width: 2px 0 0;
   border-color: #ccc;
   border-style: solid;
   padding: 0.75rem 0;
 }
 .company dl dt,
-.contact dl dt {
+.contact dl dt,
+.recruit-page dl dt {
   flex-basis: 30%;
   padding-left: 2rem;
+}
+.recruit-page dl dt {
+  color: #01A9CF;
 }
 .company dl dd,
 .contact dl dd {
   flex-basis: 70%;
 }
-.company dl dd ul {
+.company dl dd ul,
+.recruit-page dl dd ul {
   list-style: none;
   margin: 0;
   padding-left: 0;
@@ -227,6 +237,9 @@ dl {
 .company dl dd ul.business li:before {
   content: "1. ";
 }
+.recruit-page dl dd ul li:before {
+  content: "◎ ";
+}
 p.right {
   font-size: 85%;
   margin: 0 auto 4rem;
@@ -239,13 +252,17 @@ p.right {
   text-align: left;
   width: 100%;
 }
-.equipments table {
+.equipments table,
+.credentials table {
   border-collapse: collapse;
   border-spacing: 0;
   font-size: 90%;
   line-height: 2;
   margin: 0 auto;
   width: 57.5%;
+}
+.credentials table {
+  margin: 0 auto 5rem;
 }
 .equipments thead {
   background: #B81B25;
@@ -259,26 +276,49 @@ p.right {
   background: #F1E0E5;
   vertical-align: top;
 }
-.equipments tbody tr:nth-child(even){
-background: #E6E6E5;
+.credentials tbody th {
+  border: 1px solid #666;
+  background: #F5EECD;
+  vertical-align: top;
 }
-.equipments tbody td {
+.equipments tbody tr:nth-child(even),
+.credentials tbody tr:nth-child(odd) {
+  background: #E6E6E5;
+}
+
+.equipments tbody td,
+.credentials tbody td {
   border: 1px solid #666;
   padding-left: 2rem;
   text-align: left;
 }
-
+.recruit-page h3 {
+  color: #01A9CF;
+  font-size: 1.4rem;
+  font-weight: 550;
+  margin: 1rem auto 2rem;
+}
 .recruit-page .row {
   margin: 4rem auto 6rem;
   width: 67.5%;
 }
+.recruit-page dl {
+  display: flex;
+  font-size: 90%;
+  flex-wrap: wrap;
+  margin: 0 auto 4rem;
+  width: 67.5%;
+}
 .contact .row {
+  font-size: 90%;
   text-align: left;
   margin: 2rem auto;
   width: 67.5%;
 }
-.contact .btnbox {
+.contact .btnbox,
+.recruit-page .btnbox {
   justify-content: center;
+  padding: 2rem 0;
 }
 .contact input[type=text],
 .contact input[type=email],
@@ -294,7 +334,13 @@ background: #E6E6E5;
   background: #333;
   color: white;
   letter-spacing: 0.25rem;
-  padding: 1rem 3rem;
+  padding: 0.5rem 3rem;
+}
+.recruit-page input[type=submit] {
+  background: #333;
+  color: white;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 2rem;
 }
 .contact input#zipcode1 {
   width: 10%;
@@ -309,20 +355,25 @@ background: #E6E6E5;
 
 @media (max-width: 1240px) {
   nav {
-    max-width: 80%;
+    max-width: 90%;
   }
   nav ul {
-    flex-wrap: wrap;
+    flex-wrap: unwrap;
   }
+  nav ul li {
+    padding: 1rem 1.3vw;
+  }
+
   .pages {
-    padding: 4rem;
+    margin: 8vw auto 0;
+    padding: 8vw 10vw 4vw;
   }
   .pages .row {
     max-width: 90%;
-    margin: 2.5vw auto;
+    margin: 0 auto;
   }
   .pages .row div {
-    flex-basis: 27.5%;
+    flex-basis: 26%;
   }
   .business .row {
     width: 80%;
@@ -344,5 +395,11 @@ background: #E6E6E5;
   }
   .recruit {
     max-width: 80%;
+  }
+}
+@media (max-width: 875px) {
+  nav {
+    font-size: 90%;
+    max-width: 100%;
   }
 }
