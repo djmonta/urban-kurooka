@@ -400,6 +400,17 @@ p.right {
 @media (max-width: 875px) {
   nav {
     font-size: 90%;
-    max-width: 100%;
+    margin: 3em auto 4em;
+  }
+}
+@media (max-width: 729px) {
+  nav ul {
+    border-left: 1px solid #666;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 1em auto;
+  }
+  nav ul li:first-child {
+    border-width: 0 1px 0 0;
   }
 }
