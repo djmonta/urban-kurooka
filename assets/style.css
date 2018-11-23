@@ -9,23 +9,26 @@ img {
 .container {
   margin: 0 auto;
   max-width: 1242px;
-  width: 100;
+  width: 100%;
 }
-h1 {
+header {
+  background: url('../assets/img/top_main.png') no-repeat;
   margin: 0 auto;
+  padding-bottom: 22rem;
 }
 nav {
-  margin: 3rem auto 5rem;
+  margin: 0 auto 5rem;
+  padding: 1rem 0;
 }
 nav ul {
   display: flex;
   font-size: 88%;
   list-style: none;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 0;
 }
 nav ul li {
-  border: solid #666;
+  border: solid rgba(255, 255, 255, 0.5);
   border-width: 0 1px 0 0;
   padding: 1rem 1.25rem;
 }
@@ -36,13 +39,11 @@ nav ul li.active {
   background: #68eaf9;
 }
 nav ul a {
-  color: #222;
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
 }
-.vision {
-  margin: 0 auto 4rem;
-}
+
 .container section,
 .container header,
 .container footer {
@@ -57,22 +58,7 @@ nav ul a {
 .container p {
   line-height: 1.65;
 }
-.pages {
-  background: url('img/00_03-0.png') no-repeat;
-  background-size: 100%;
-  margin: 4rem auto 0;
-  padding: 7vw 15vw 2vw;
-  text-align: center;
-}
-.pages .row {
-  display: flex;
-  justify-items: center;
-  justify-content: space-between;
-  align-content: center;
-}
-.pages .row div {
-  flex-basis: 27.5%;
-}
+
 .recruit {
   margin: 5vw auto;
 }
@@ -80,12 +66,94 @@ footer {
   margin: 0 auto;
 }
 
-.message .greeting {
-  margin: 0 auto 5rem;
+.vision {
+  background: url('img/top_sentence-bg.png') no-repeat;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+.vision .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding: 5rem 0;
+  width: 75%;
+}
+.vision .left {
+  width: 47.5%;
+  text-align: left;
+}
+.vision h2 {
+  font-family: 'Times New Roman', Times, serif;
+  border-bottom: 10px solid rgba(238,227,8,0.8);
+  margin: 2rem auto 0.5em;
+  font-size: 2.2em;
+  font-weight: 400;
+  line-height: 0.5;
+  letter-spacing: -0.05em;
+}
+.vision .left p {
+  font-size: 90%;
+  letter-spacing: -0.9px;
+  line-height: 2;
+  margin: 1.5rem auto 2rem;
+}
+.vision .left a {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  font-weight: bold;
+  line-height: normal;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+.vision .row2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 1.5rem 0;
+  margin: auto;
+  width: 62%;
+}
+.vision .right {
+  width: 56%;
+  text-align: left;
+}
+.vision .right p {
+  font-size: 90%;
+  letter-spacing: -0.9px;
+  line-height: 2;
+  margin: 1.5rem auto 2rem;
+}
+.pages {
+  margin: 2rem auto 0;
+  padding: 2vw 0;
+  text-align: center;
+}
+.pages .row {
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0 auto;
+  width: 65%;
+}
+.pages .row div {
+  flex-basis: 27.5%;
+}
+.page header {
+  padding-bottom: 10rem;
+}
+.company header {
+  background: url('img/company_top.png') no-repeat;
+}
+.company .greeting {
+  margin: 0 auto 3rem;
   width: 80%;
   /* text-align: center; */
 }
-.message .row {
+.company .row {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
@@ -108,28 +176,77 @@ h2 {
   line-height: 0.5;
   letter-spacing: 0.2em;
 }
-.message .greeting h3 {
+.company .greeting h3 {
   flex-basis: 90%;
   font-family: 'Times New Roman', Times, serif;
 }
-.message .greeting .article {
+.company .greeting .article {
   flex-basis: 60%;
   font-size: 95%;
   line-height: 1.4;
 }
-.message .greeting  p {
+.company .greeting  p {
   margin: 0.5rem 0 0.8rem;
 }
-.message .greeting ol {
+.company .greeting ol {
   padding-left: 1.4em;
   margin: 0;
 }
-.message .greeting .ceo {
+.company .greeting .ceo {
   flex-basis: 25%;
   text-align: right;
 }
-.company .undef {
-  margin: 5rem auto 0;
+.company .enkaku {
+  border-bottom: 2px solid #999;
+  border-top: 2px solid #999;
+  padding: 2rem 0 3rem;
+}
+.company .enkaku dl {
+  line-height: 2;
+  margin: 0.5rem auto 1rem;
+  width: 65%;
+}
+.company .enkaku dl div {
+  width: 100%;
+  display: inline-flex;
+  padding: 0.75rem 0;
+}
+.company .enkaku dl div:nth-child(even) {
+  background: rgba(1, 169, 207, 0.25);
+}
+
+.company .enkaku dl dt,
+.company .enkaku dl dd {
+  font-size: 90%;
+  padding: 0;
+}
+.company .enkaku dl dt {
+  border-right: 1px dotted #999;
+  flex-basis: 30%;
+  padding-left: 3rem;
+}
+.company .enkaku dl dd {
+  flex-basis: 60%;
+}
+.company .gaiyou {
+  padding: 2rem 0 3rem;
+}
+.company .gaiyou dl {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 90%;
+  margin: 1rem auto;
+  width: 70%;
+}
+.company .gaiyou dl dd ul.worker {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.company .gaiyou dl dd ul.worker li {
+  flex-basis: 50%;
+}
+.company .gaiyou dl dd ul.business li:before {
+  content: "1. ";
 }
 .business .row {
   display: flex;
@@ -162,13 +279,7 @@ dl {
   margin: 0 auto;
   width: 57.5%;
 }
-.company dl {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 90%;
-  margin: 2rem auto;
-  width: 67.5%;
-}
+
 .contact dl {
   display: flex;
   font-size: 90%;
@@ -178,7 +289,7 @@ dl {
 }
 .contact dl div,
 .works dl div,
-.company dl div,
+.company .gaiyou dl div,
 .recruit-page dl div {
   display: inline-flex;
   flex-basis: 100%;
@@ -200,7 +311,7 @@ dl {
 .works dl dd {
   flex-basis: 30%;
 }
-.company dl div,
+.company .gaiyou dl div,
 .contact dl div,
 .recruit-page dl div {
   border-width: 2px 0 0;
@@ -208,7 +319,7 @@ dl {
   border-style: solid;
   padding: 0.75rem 0;
 }
-.company dl dt,
+.company .gaiyou dl dt,
 .contact dl dt,
 .recruit-page dl dt {
   flex-basis: 30%;
@@ -217,25 +328,15 @@ dl {
 .recruit-page dl dt {
   color: #01A9CF;
 }
-.company dl dd,
+.company .gaiyou dl dd,
 .contact dl dd {
   flex-basis: 70%;
 }
-.company dl dd ul,
+.company .gaiyou dl dd ul,
 .recruit-page dl dd ul {
   list-style: none;
   margin: 0;
   padding-left: 0;
-}
-.company dl dd ul.worker {
-  display: inline-flex;
-  flex-wrap: wrap;
-}
-.company dl dd ul.worker li {
-  flex-basis: 50%;
-}
-.company dl dd ul.business li:before {
-  content: "1. ";
 }
 .recruit-page dl dd ul li:before {
   content: "◎ ";
