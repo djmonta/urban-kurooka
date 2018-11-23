@@ -248,6 +248,9 @@ h2 {
 .company .gaiyou dl dd ul.business li:before {
   content: "1. ";
 }
+.business header {
+  background: url('img/business_top.png') no-repeat;
+}
 .business .row {
   display: flex;
   flex-wrap: wrap;
@@ -258,21 +261,27 @@ h2 {
 .business h3 {
   flex-basis: 100%;
 }
-.works .row {
+.business .row div {
+  width: 25%;
+}
+.projects header {
+  background: url('img/projects_top.png') no-repeat;
+}
+.projects .row {
   line-height: 1.65;
 }
-.works .row,
+.projects .row,
 .credentials .row,
 .equipments .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 1rem auto;
+  margin: 0 auto 1rem;
   width: 57.5%;
 }
 dl {
   line-height: 1.65;
 }
-.works dl {
+.projects dl {
   display: flex;
   flex-wrap: wrap;
   font-size: 90%;
@@ -280,15 +289,7 @@ dl {
   width: 57.5%;
 }
 
-.contact dl {
-  display: flex;
-  font-size: 90%;
-  flex-wrap: wrap;
-  margin: 0 auto 4rem;
-  width: 67.5%;
-}
-.contact dl div,
-.works dl div,
+.projects dl div,
 .company .gaiyou dl div,
 .recruit-page dl div {
   display: inline-flex;
@@ -296,23 +297,22 @@ dl {
   padding: 0.5rem 0;
   text-align: left;
 }
-.works dl div:nth-child(odd) {
+.projects dl div:nth-child(odd) {
   background: #E4E5F0;
 }
-.works dl dt,
+.projects dl dt,
 .recruit-page dl dd {
   flex-basis: 70%;
   padding-left: 1rem;
 }
-.works dl dt i {
+.projects dl dt i {
   color: #134A8C;
   margin-right: 0.5rem;
 }
-.works dl dd {
-  flex-basis: 30%;
+.projects dl dd {
+  flex-basis: 22.55%;
 }
 .company .gaiyou dl div,
-.contact dl div,
 .recruit-page dl div {
   border-width: 2px 0 0;
   border-color: #ccc;
@@ -320,7 +320,6 @@ dl {
   padding: 0.75rem 0;
 }
 .company .gaiyou dl dt,
-.contact dl dt,
 .recruit-page dl dt {
   flex-basis: 30%;
   padding-left: 2rem;
@@ -328,8 +327,7 @@ dl {
 .recruit-page dl dt {
   color: #01A9CF;
 }
-.company .gaiyou dl dd,
-.contact dl dd {
+.company .gaiyou dl dd {
   flex-basis: 70%;
 }
 .company .gaiyou dl dd ul,
@@ -341,17 +339,20 @@ dl {
 .recruit-page dl dd ul li:before {
   content: "◎ ";
 }
-p.right {
-  font-size: 85%;
-  margin: 0 auto 4rem;
-  text-align: right;
+.credentials header {
+  background: url('img/credential_top.png') no-repeat;
 }
-.works p,
+.projects p,
 .credentials p,
 .equipments p {
   line-height: 1;
   text-align: left;
   width: 100%;
+}
+p.right {
+  font-size: 85%;
+  margin: 1rem auto 3rem;
+  text-align: right;
 }
 .equipments table,
 .credentials table {
@@ -362,25 +363,32 @@ p.right {
   margin: 0 auto;
   width: 57.5%;
 }
+.equipments table,
 .credentials table {
+  border: 2px solid #666;
   margin: 0 auto 5rem;
+}
+.equipments table {
+  margin-bottom: 0.5rem;
 }
 .equipments thead {
   background: #B81B25;
   color: white;
 }
 .equipments thead td {
-  border: 1px solid #666;
+  border: 2px solid #666;
+  font-weight: bold;
 }
 .equipments th {
-  border: 1px solid #666;
+  border: 2px solid #666;
   background: #F1E0E5;
   vertical-align: top;
 }
 .credentials tbody th {
-  border: 1px solid #666;
+  border: 2px solid #666;
   background: #F5EECD;
   vertical-align: top;
+  width: 25%;
 }
 .equipments tbody tr:nth-child(even),
 .credentials tbody tr:nth-child(odd) {
@@ -389,9 +397,50 @@ p.right {
 
 .equipments tbody td,
 .credentials tbody td {
-  border: 1px solid #666;
-  padding-left: 2rem;
+  border-left: 2px solid #666;
+  padding: 0.25rem 0 0.25rem 2rem;
   text-align: left;
+}
+.credentials tbody tr > td:nth-child(2),
+.credentials tbody tr > td:nth-child(3) {
+  width: 20%;
+  padding: 0.25rem 0;
+  text-align: center;
+}
+.credentials tbody tr > td:nth-child(3) {
+  border-top: 2px solid #666;  
+}
+.credentials tbody tr > td.first-line {
+  border-top: 2px solid #666;
+  width: auto;
+  padding: 0.25rem 0 0.25rem 2rem;
+  text-align: left;
+}
+.equipments header {
+  background: url('img/equipment_top.png') no-repeat;
+}
+.equipments tbody tr > td:nth-child(2),
+.equipments tbody tr > td:nth-child(3) {
+  width: 20%;
+  padding: 0.25rem 0;
+  text-align: center;
+}
+.equipments tbody tr > td:nth-child(3) {
+  border-top: 2px solid #666;  
+}
+.equipments tbody tr > td.first-line {
+  border-top: 2px solid #666;
+  width: auto;
+  padding: 0.25rem 0 0.25rem 2rem;
+  text-align: left;
+}
+.equipments p.small {
+  font-size: 85%;
+  margin: 0rem auto 4rem;
+  text-align: left;
+}
+.recruit-page header {
+  background: url('img/recruit_top.png') no-repeat;
 }
 .recruit-page h3 {
   color: #01A9CF;
@@ -410,16 +459,150 @@ p.right {
   margin: 0 auto 4rem;
   width: 67.5%;
 }
+.recruit-page .fukuri {
+  background-image: url('img/bg-blue.png');
+  background-repeat: repeat;
+  padding: 1rem 0 2rem;
+  margin: 0 auto 2rem;
+  width: 70%;
+}
+.recruit-page .fukuri .row {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  text-align: left;
+  padding: 0 2rem;
+  margin: 0 auto;
+  width: 85%;
+}
+.recruit-page .fukuri #education {
+  padding-top: 2rem;
+}
+.recruit-page .fukuri .row .left {
+  width: 50%;
+}
+.recruit-page .fukuri .row .right {
+  text-align: right;
+  width: 50%;
+}
+.recruit-page .fukuri #service {
+  align-items: flex-end;
+}
+.recruit-page .fukuri #service .left {
+  width: 65%;
+}
+.recruit-page .fukuri #service .right {
+  text-align: left;
+  width: 35%;
+}
+.recruit-page .fukuri #service .left .flex-p {
+  display: flex;
+}
+.recruit-page .fukuri #service .left .flex-p img {
+  margin-right: 2rem;
+}
+.recruit-page .fukuri h3 {
+  color: #fff;
+  padding: 1rem 0;
+}
+.recruit-page .fukuri h4 {
+  color: #01A9CF;
+  font-size: 1.1em;
+  margin: 1.5rem auto 0;
+}
+.recruit-page .fukuri h4 i {
+  margin-right: 0.3rem;
+}
+.recruit-page .fukuri p {
+  margin-left: 2rem;
+}
+.recruit-page .fukuri #education .caption {
+  margin-top: -1rem;
+  text-align: right;
+  width: 55%;
+}
+.recruit-page .fukuri .caption {
+  color: #01A9CF;
+  font-weight: bold;
+  margin-left: 0;
+}
+.recruit-page .fukuri .left .caption {
+  margin-left: 2rem;
+}
+.recruit-page .fukuri #active {
+  padding-bottom: 1rem;
+}
+.recruit-page .fukuri #active h4 {
+  width: 100%;
+}
+.recruit-page .fukuri #active .flex-p {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 100%;
+}
+.recruit-page .fukuri #active .flex-p img {
+  display: block;
+}
+.recruit-page .fukuri #active .caption {
+  margin-top: 0;
+}
+.recruit-page .fukuri hr {
+  background: #fff;
+  border-style: solid;
+  border: 1px solid #01A9CF;
+  width: 100%;
+}
+.recruit-page section a {
+  background: #333;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  line-height: normal;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 5rem;
+}
+.contact header {
+  background: url('img/contact_top.png') no-repeat;
+}
 .contact .row {
   font-size: 90%;
   text-align: left;
   margin: 2rem auto;
+  width: 75%;
+}
+.contact form {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
   width: 67.5%;
+}
+.contact section {
+  margin-bottom: 5rem;
+}
+.contact dt, .contact dd {
+  border-bottom: 2px solid #999;
+  font-size: 90%;
+  padding: 1rem 0;
+  text-align: left;
+}
+.contact dt {
+  flex-basis: 30%;
+  padding-left: 2rem;
+}
+.contact dd {
+  flex-basis: 65%;
+  margin-left: 0;
 }
 .contact .btnbox,
 .recruit-page .btnbox {
   justify-content: center;
   padding: 2rem 0;
+}
+.contact .btnbox {
+  display: inline-block;
 }
 .contact input[type=text],
 .contact input[type=email],
@@ -431,17 +614,13 @@ p.right {
 .contact input[type=radio] {
   margin: 0 0.5rem;
 }
-.contact input[type=submit] {
+.contact .btnbox a {
   background: #333;
   color: white;
+  font-weight: bold;
   letter-spacing: 0.25rem;
   padding: 0.5rem 3rem;
-}
-.recruit-page input[type=submit] {
-  background: #333;
-  color: white;
-  letter-spacing: 0.1rem;
-  padding: 0.5rem 2rem;
+  text-decoration: none;
 }
 .contact input#zipcode1 {
   width: 10%;
@@ -483,13 +662,13 @@ p.right {
     max-width: 80%;
     margin: 0 auto;
   }
-  .works .row,
+  .projects .row,
   .credentials .row,
   .equipments .row,
   .contact .row {
     width: 70%;
   }
-  .works dl,
+  .projects dl,
   .credentials dl,
   .equipments table {
     width: 70%;
