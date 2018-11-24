@@ -14,34 +14,48 @@ img {
 header {
   background: url('../assets/img/top_main.png') no-repeat;
   margin: 0 auto;
-  padding-bottom: 22rem;
+  padding: 1.5rem 0 29.5rem;
 }
 nav {
-  margin: 0 auto 5rem;
-  padding: 1rem 0;
+  margin: 0 auto;
+  padding: 0 0 1rem;
 }
 nav ul {
   display: flex;
   font-size: 88%;
   list-style: none;
-  justify-content: flex-end;
-  padding: 0;
+  justify-content: flex-start;
+  padding: 0.1rem 0;
+  margin: 0;
 }
 nav ul li {
   border: solid rgba(255, 255, 255, 0.5);
   border-width: 0 1px 0 0;
-  padding: 1rem 1.25rem;
+  padding: 0.5rem 1.25rem;
 }
-nav ul li:first-child {
+nav ul li:nth-child(2) {
   border-width: 0 1px 0 1px;
 }
 nav ul li.active {
   background: #68eaf9;
 }
+.container nav ul a,
 nav ul a {
   color: #fff;
   font-weight: bold;
+  line-height: normal;
   text-decoration: none;
+}
+nav ul li:first-child {
+  border: 0;
+  flex-basis: 30%;
+}
+nav ul li:first-child a {
+  line-height: normal;
+  width: 100%;
+}
+nav ul li:first-child a span {
+  visibility: hidden;
 }
 
 .container section,
@@ -143,7 +157,7 @@ footer {
   flex-basis: 27.5%;
 }
 .page header {
-  padding-bottom: 10rem;
+  padding-bottom: 15rem;
 }
 .company header {
   background: url('img/company_top.png') no-repeat;
@@ -635,18 +649,26 @@ p.right {
 
 @media (max-width: 1240px) {
   nav {
-    max-width: 90%;
+    max-width: 100%;
   }
   nav ul {
-    flex-wrap: unwrap;
+    flex-wrap: nowrap;
   }
   nav ul li {
-    padding: 1rem 1.3vw;
+    padding: 0.5rem 1.3vw;
   }
 
+  .vision .row {
+    margin: auto;
+  }
+  .vision .right,
+  .vision .left {
+    max-width: 90%;
+    width: auto;
+  }
   .pages {
-    margin: 8vw auto 0;
-    padding: 8vw 10vw 4vw;
+    /* margin: 8vw auto 0; */
+    /* padding: 8vw 10vw 4vw; */
   }
   .pages .row {
     max-width: 90%;
@@ -677,10 +699,18 @@ p.right {
     max-width: 80%;
   }
 }
+@media (max-width: 1240px) {
+  nav ul li:first-child {
+    flex-basis: 20%;
+  }
+}
 @media (max-width: 875px) {
   nav {
     font-size: 90%;
-    margin: 3em auto 4em;
+    margin: 0 auto 4em;
+  }
+  nav ul li:first-child {
+    flex-basis: 15%;
   }
 }
 @media (max-width: 729px) {
