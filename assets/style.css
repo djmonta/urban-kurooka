@@ -82,6 +82,7 @@ footer {
 
 .vision {
   background: url('img/top_sentence-bg.png') no-repeat;
+  background-size: cover;
   margin: 0 auto;
   padding-bottom: 3rem;
   text-align: center;
@@ -664,7 +665,7 @@ p.right {
   .vision .right,
   .vision .left {
     max-width: 90%;
-    width: auto;
+    width: 90%;
   }
   .pages {
     /* margin: 8vw auto 0; */
@@ -700,8 +701,20 @@ p.right {
   }
 }
 @media (max-width: 1240px) {
+  header {
+    background-size: cover;
+    padding-bottom: 37.8vw;
+  }
+  .page header {
+    background-size: contain;
+  }
   nav ul li:first-child {
     flex-basis: 20%;
+  }
+}
+@media (max-width: 1200px) {
+  .vision {
+    background-size: contain;
   }
 }
 @media (max-width: 875px) {
