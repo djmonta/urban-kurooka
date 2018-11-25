@@ -702,8 +702,9 @@ p.right {
   .credentials .row,
   .equipments .row,
   .contact .row {
-    /* width: 70%; */
+    width: 70%;
   }
+  .credentials table,
   .projects dl,
   .credentials dl,
   .equipments table {
@@ -711,6 +712,26 @@ p.right {
   }
   .recruit {
     max-width: 80%;
+  }
+  .recruit-page .fukuri {
+    width: 80%;
+  }
+
+  .recruit-page .fukuri .row {
+    width: 87.5%;
+  }
+  .recruit-page .fukuri .left .caption,
+  .recruit-page .fukuri p {
+    margin-left: 1rem;
+  }
+  .recruit-page .fukuri #education .caption {
+    width: 50%;
+  }
+  .recruit-page .fukuri #service .left .flex-p img {
+    margin-right: 0;
+    padding-right: 5%;
+    height: auto;
+    flex-basis: 48%;
   }
 }
 @media (max-width: 1240px) {
@@ -737,6 +758,9 @@ p.right {
   }
   nav ul li:first-child {
     flex-basis: 15%;
+  }
+  .recruit-page .fukuri #service .left .flex-p img {
+    flex-basis: 80%;
   }
 }
 @media (max-width: 729px) {
