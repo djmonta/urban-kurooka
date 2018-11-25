@@ -12,20 +12,21 @@ img {
   width: 100%;
 }
 header {
-  background: url('../assets/img/top_main.png') no-repeat;
+  background: url('../assets/img/top_main-pc.png') no-repeat;
   margin: 0 auto;
   padding: 1.5rem 0 29.5rem;
 }
 nav {
   margin: 0 auto;
-  padding: 0 0 1rem;
+  padding: 0;
 }
 nav ul {
   display: flex;
+  background: rgba(20, 144, 173, .7);
   font-size: 88%;
   list-style: none;
   justify-content: flex-start;
-  padding: 0.1rem 0;
+  padding: 0.5rem 0;
   margin: 0;
 }
 nav ul li {
@@ -57,7 +58,9 @@ nav ul li:first-child a {
 nav ul li:first-child a span {
   visibility: hidden;
 }
-
+nav.m-menu {
+  display: none;
+}
 .container section,
 .container header,
 .container footer {
@@ -759,25 +762,36 @@ p.right {
   }
 }
 @media (max-width: 875px) {
+  .container header {
+    text-align: right;
+  }
   nav {
     font-size: 90%;
     margin: 0 auto 4em;
   }
-  nav ul li:first-child {
-    flex-basis: 15%;
+  nav.pc-menu {
+    display: none;
+  }
+  nav.m-menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  nav.m-menu ul {
+    justify-content: center;
+    width: 10%;
+  }
+  nav.m-menu ul li {
+    color: #fff;
+    font-size: 2em;
+  }
+  nav.m-menu ul li:first-child {
+    flex-basis: 50%;
   }
   .recruit-page .fukuri #service .left .flex-p img {
     flex-basis: 80%;
   }
 }
 @media (max-width: 729px) {
-  nav ul {
-    border-left: 1px solid #666;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin: 1em auto;
-  }
-  nav ul li:first-child {
-    border-width: 0 1px 0 0;
-  }
+
 }
