@@ -197,6 +197,7 @@ h2 {
   font-size: 1.25em;
 }
 .company .greeting .article {
+  /* TODO: update */
   /* flex-basis: 60%; */
   flex-basis: 85%;
   font-size: 95%;
@@ -210,6 +211,7 @@ h2 {
   margin: 0;
 }
 .company .greeting .ceo {
+  /* TODO: update */
   /* flex-basis: 25%; */
   flex-basis: 85%;
   text-align: right;
