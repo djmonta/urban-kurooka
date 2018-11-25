@@ -271,12 +271,15 @@ h2 {
 .business header {
   background: url('img/business_top.png') no-repeat;
 }
+.business .container section {
+  padding-bottom: 5rem;
+}
 .business .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 67.5%;
-  margin: 2rem auto 4rem;
+  margin: 2rem auto;
 }
 .business h3 {
   flex-basis: 100%;
@@ -289,6 +292,9 @@ h2 {
 }
 .projects .row {
   line-height: 1.65;
+}
+.projects h3 {
+  border-bottom: 1px solid #134A8C;
 }
 .projects .row,
 .credentials .row,
@@ -688,7 +694,7 @@ p.right {
   }
   .container section.business {
     max-width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 3rem;
   }
   .projects .row,
   .credentials .row,
