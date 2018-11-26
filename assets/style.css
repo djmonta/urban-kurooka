@@ -699,7 +699,7 @@ p.right {
     flex-basis: 26%;
   }
   .business .row {
-    width: 80%;
+    width: 85%;
   }
   .container section.business {
     max-width: 80%;
@@ -725,7 +725,7 @@ p.right {
   }
 
   .recruit-page .fukuri .row {
-    width: 87.5%;
+    width: 80%;
   }
   .recruit-page .fukuri .left .caption,
   .recruit-page .fukuri p {
@@ -748,6 +748,7 @@ p.right {
   }
   .page header {
     background-size: contain;
+    padding-bottom: 18.5%;
   }
   nav ul li:first-child {
     flex-basis: 20%;
@@ -759,6 +760,27 @@ p.right {
   }
   .vision .left p {
     margin-bottom: 1rem;
+  }
+  .vision h2 {
+    line-height: normal;
+    margin-top: 0;
+  }
+  .company .greeting,
+  .company .enkaku,
+  .company .gaiyou {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .company .enkaku dl,
+  .company .gaiyou dl {
+    width: 90%;
+  }
+  .recruit-page dl dt,
+  .company .enkaku dl dt {
+    padding-left: 0.5rem;
+  }
+  .company .enkaku dl dd {
+    margin-left: 1rem;
   }
 }
 @media (max-width: 875px) {
@@ -788,8 +810,41 @@ p.right {
   nav.m-menu ul li:first-child {
     flex-basis: 50%;
   }
+  .business .row {
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .business .row div {
+    width: 30%;
+    margin: 1rem 0;
+  }
   .recruit-page .fukuri #service .left .flex-p img {
     flex-basis: 80%;
+  }
+  .recruit-page .fukuri,
+  .projects .row,
+  .credentials .row,
+  .equipments .row,
+  .contact .row {
+    width: 90%;
+  }
+  .contact form,
+  .recruit-page dl,
+  .equipments table,
+  .credentials table,
+  .projects dl {
+    width: 90%;
+  }
+  .recruit-page dl dd,
+  .projects dl dd {
+    margin-left: 1rem;
+  }
+  .contact dt,
+  .equipments tbody tr > td.first-line,
+  .equipments tbody td, .credentials tbody td,
+  .credentials tbody tr > td.first-line {
+    padding-left: 0.5rem;
   }
 }
 @media (max-width: 729px) {
