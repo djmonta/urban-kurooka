@@ -164,7 +164,7 @@ footer {
   padding-bottom: 15rem;
 }
 .company header {
-  background: url('img/company_top.png') no-repeat;
+  background: url('img/company_top-pc.png') no-repeat;
 }
 .company .greeting {
   margin: 0 auto 3rem;
@@ -274,7 +274,7 @@ h2 {
   content: "1. ";
 }
 .business header {
-  background: url('img/business_top.png') no-repeat;
+  background: url('img/business_top-pc.png') no-repeat;
 }
 .business .container section {
   padding-bottom: 5rem;
@@ -293,7 +293,7 @@ h2 {
   width: 25%;
 }
 .projects header {
-  background: url('img/projects_top.png') no-repeat;
+  background: url('img/projects_top-pc.png') no-repeat;
 }
 .projects .row {
   line-height: 1.65;
@@ -371,7 +371,7 @@ dl {
   content: "◎ ";
 }
 .credentials header {
-  background: url('img/credential_top.png') no-repeat;
+  background: url('img/credential_top-pc.png') no-repeat;
 }
 .projects p,
 .credentials p,
@@ -448,7 +448,7 @@ p.right {
   text-align: left;
 }
 .equipments header {
-  background: url('img/equipment_top.png') no-repeat;
+  background: url('img/equipment_top-pc.png') no-repeat;
 }
 .equipments tbody tr > td:nth-child(2),
 .equipments tbody tr > td:nth-child(3) {
@@ -471,7 +471,7 @@ p.right {
   text-align: left;
 }
 .recruit-page header {
-  background: url('img/recruit_top.png') no-repeat;
+  background: url('img/recruit_top-pc.png') no-repeat;
 }
 .recruit-page h3 {
   color: #01A9CF;
@@ -596,7 +596,7 @@ p.right {
   margin-bottom: 5rem;
 }
 .contact header {
-  background: url('img/contact_top.png') no-repeat;
+  background: url('img/contact_top-pc.png') no-repeat;
 }
 .contact .row {
   font-size: 90%;
