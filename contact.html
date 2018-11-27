@@ -37,10 +37,10 @@
         </p>
       </div>
       <dl>
-          <form action="" name="contact_form">
+          <form action="https://usebasin.com/f/0a5711e5c3ea" accept-charset="UTF-8" method="post" name="contact_form">
           <dt>要件<span class="required">（必須）</span></dt>
           <dd>
-            <input type="radio" name="subject" id="quotation"><label for="quotation">見積依頼</label>
+            <input type="radio" name="subject" id="quotation" checked><label for="quotation">見積依頼</label>
             <input type="radio" name="subject" id="question"><label for="question">ご質問</label>
             <input type="radio" name="subject" id="application"><label for="application">求人応募</label>
             <input type="radio" name="subject" id="other"><label for="other">その他</label>
@@ -73,9 +73,9 @@
           <dd>
             <input type="text" name="fax">
           </dd>
-          <dt>メールアドレス</dt>
+          <dt>メールアドレス<span class="required">（必須）</span></dt>
           <dd>
-            <input type="email" name="email">
+            <input type="email" name="email" required>
           </dd>
           <dt>メールアドレス（確認用）</dt>
           <dd>
@@ -85,16 +85,13 @@
           <dd>
             <textarea name="content" id="" cols="30" rows="10"></textarea>
           </dd>
+          <dd class="btnbox"><button type="submit">送信 <i class="fa fa-angle-double-right"></i></button></dd>
         </form>
-        <div class="btnbox">
-          <a href="javascript:void(0)" onclick="sgMail.send(msg);">送信 <i class="fa fa-angle-double-right"></i></a>
-        </div>
       </dl>
     </section>
     <footer>
         <a href="contact.html"><img src="assets/img/footer.png" alt="お問い合わせはお気軽に"></a>
     </footer>
   </div>
-  <script src="assets/index.js"></script>
 </body>
 </html>

@@ -633,7 +633,9 @@ p.right {
   padding: 2rem 0;
 }
 .contact .btnbox {
-  display: inline-block;
+  border: 0;
+  flex-basis: 100%;
+  text-align: center;
 }
 .contact input[type=text],
 .contact input[type=email],
@@ -645,8 +647,9 @@ p.right {
 .contact input[type=radio] {
   margin: 0 0.5rem;
 }
-.contact .btnbox a {
+.contact button[type=submit] {
   background: #333;
+  border: 0;
   color: white;
   font-weight: bold;
   letter-spacing: 0.25rem;
