@@ -827,17 +827,17 @@ p.right {
 
   /* nav toggle */
   .nav-toggle {
-    background: rgba(1, 169, 207, 0.8);
+    background: rgba(15, 142, 178, 0.8);
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
     cursor: pointer;
-    height: 3rem;
+    height: 2.2rem;
     right: 0;
     /* padding: 0.5rem 2rem 0.5rem 0; */
     position: fixed;
-    top: 2rem;
-    width: 5rem;
+    top: 0.8rem;
+    width: 3.2rem;
     z-index: 2;
   }
   .nav-toggle:hover {
@@ -858,19 +858,19 @@ p.right {
     transition: all 0.5s ease;
     background: white;
     content: '';
-    height: 0.2rem;
-    right: 1.5rem;
-    width: 2.4rem;
+    height: 0.1rem;
+    right: 0.8rem;
+    width: 1.5rem;
   }
   .nav-toggle .nav-toggle-bar {
     margin-top: 0;
   }
   .nav-toggle .nav-toggle-bar::after {
-    margin-top: 0.6rem;
+    margin-top: 0.4rem;
     right: 0;
   }
   .nav-toggle .nav-toggle-bar::before {
-    margin-top: -0.6rem;
+    margin-top: -0.4rem;
     right: 0;
   }
   .nav-toggle.expanded .nav-toggle-bar {
@@ -947,6 +947,105 @@ p.right {
     visibility: visible;
   }
 
+  header {
+    background-image: url('img/top_main-m.png');
+    background-size: cover;
+    padding-bottom: 38.1vw;
+  }
+  .pages .row {
+    justify-content: space-around;
+    width: 90%;
+  }
+  .company .greeting, .company .enkaku, .company .gaiyou {
+    width: 85%;
+  }
+  .page header {
+    background-size: contain;
+    padding-bottom: 21.5%;
+  }
+  .company header {
+    background-image: url('img/company_top-m.png');
+  }
+  h2 {
+    font-size: 1.5em;
+    margin: 1rem 0;
+  }
+  .text-shadow {
+    margin-bottom: 0;
+  }
+  .company .greeting .article {
+    flex-basis: 96%;
+  }
+  .company .greeting h3 {
+    font-size: 1.18em;
+    text-align: center;
+  }
+  .company .greeting p {
+    line-height: 1.6;
+    font-size: 101%;
+    letter-spacing: -0.1px;
+  }
+  .company .greeting .ceo img {
+    margin-top: 0.3rem;
+  }
+  .company .row {
+    margin: 0 auto 1.5rem;
+  }
+  .company .enkaku {
+    border-bottom: 1.5px solid #999;
+    border-top: 1.5px solid #999;
+    padding: 1.5rem 0;
+  }
+  .company .enkaku .row {
+    margin-bottom: 0;
+  }
+  .company .enkaku dl, .company .gaiyou dl {
+    font-size: 90%;
+    margin-top: 0;
+    line-height: 1.3;
+    letter-spacing: -0.5px;
+    width: 100%;
+  }
+  .company .enkaku dl div {
+    padding: 0.5rem 0;
+  }
+  .company .enkaku dl dt {
+    flex-basis: 42%;
+    padding-left: 0.2rem;
+  }
+  .company .enkaku dl dt span {
+    font-weight: bold;
+  }
+  .company .enkaku dl dd {
+    margin-left: 0.3rem;
+  }
+  .company .gaiyou {
+    padding: 1.5rem 0;
+  }
+  .company .gaiyou dl {
+    line-height: 1.5;
+  }
+  .company .gaiyou dl div, .recruit-page dl div {
+    border-width: 0.5px 0 0;
+    padding: 0.4rem 0;
+  }
+  .company .gaiyou dl dt, .recruit-page dl dt {
+    font-size: 90%;
+    flex-basis: 28%;
+    letter-spacing: -0.2px;
+    padding-left: 0.2rem;
+  }
+  .company .gaiyou dl dd {
+    font-size: 90%;
+    letter-spacing: -0.2px;
+    margin-left: 0.3rem;
+  }
+  .company .gaiyou dl dd ul.worker li {
+    flex-basis: 100%;
+  }
+  .business header {
+    background-image: url('img/business_top-m.png');
+  }
   .business .row {
     justify-content: space-between;
     margin: 0 auto;
@@ -955,6 +1054,30 @@ p.right {
   .business .row div {
     width: 30%;
     margin: 1rem 0;
+  }
+  .projects header {
+    background-image: url('img/projects_top-m.png');
+  }
+  .projects header .nav-toggle {
+    background: rgba(19, 74, 140, 0.8);
+  }
+  .credentials header {
+    background-image: url('img/credential_top-m.png');
+  }
+  .credentials header .nav-toggle {
+    background: rgba(217, 200, 73, 0.8);
+  }
+  .equipments header {
+    background-image: url('img/equipment_top-m.png');
+  }
+  .equipments header .nav-toggle {
+    background: rgba(183, 28, 37, 0.8);
+  }
+  .recruit-page header {
+    background-image: url('img/recruit_top-m.png');
+  }
+  .contact header {
+    background-image: url('img/contact_top-m.png');
   }
   .recruit-page .fukuri #service .left .flex-p img {
     flex-basis: 80%;
