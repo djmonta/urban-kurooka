@@ -952,9 +952,48 @@ p.right {
     background-size: cover;
     padding-bottom: 38.1vw;
   }
+  .vision {
+    background: none;
+  }
+  .vision .row, .vision .row2 {
+    width: 85%;
+  }
+  .vision .right, .vision .left {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+  }
+  .vision h2 {
+    display: inline-block;
+    font-size: 1.4em;
+    line-height: 0.5;
+  }
+  .vision p.pc-p {
+    display: none;
+  }
+  .vision .left p, .vision .right p {
+    font-size: 95%;
+    line-height: normal;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .vision .left a {
+    font-size: 90%;
+    margin: 0.75rem auto;
+  }
   .pages .row {
     justify-content: space-around;
     width: 90%;
+  }
+  .recruit {
+    max-width: 100%;
+    width: 85%;
+  }
+  .recruit .pc-a {
+    display: none;
+  }
+  .recruit .m-a {
+    border: 2px solid #01A9CF;
   }
   .company .greeting, .company .enkaku, .company .gaiyou {
     width: 85%;
@@ -999,7 +1038,9 @@ p.right {
   .company .enkaku .row {
     margin-bottom: 0;
   }
-  .company .enkaku dl, .company .gaiyou dl {
+  .projects dl,
+  .company .enkaku dl,
+  .company .gaiyou dl {
     font-size: 90%;
     margin-top: 0;
     line-height: 1.3;
@@ -1049,11 +1090,25 @@ p.right {
   .business .row {
     justify-content: space-between;
     margin: 0 auto;
-    width: 90%;
   }
   .business .row div {
-    width: 30%;
-    margin: 1rem 0;
+    width: 31%;
+    margin: 0.5rem 0;
+  }
+  .credentials h3,
+  .business h3,
+  .projects h3 {
+    margin: 0.5rem auto 0;
+    overflow-y: -webkit-paged-x;
+    overflow-x: hidden;
+  }
+  .credentials h3 img,
+  .business h3 img,
+  .projects h3 img {
+    max-width: 150%;
+  }
+  .business .container section {
+    padding: 1rem 0;
   }
   .projects header {
     background-image: url('img/projects_top-m.png');
@@ -1061,12 +1116,66 @@ p.right {
   .projects header .nav-toggle {
     background: rgba(19, 74, 140, 0.8);
   }
+  .projects dl {
+    font-size: 82.5%;
+  }
+  .projects dl div {
+    padding: 0.3rem 0;
+  }
+  .projects dl dt {
+    flex-basis: 64%;
+  }
+  .projects dl dd {
+    flex-basis: 36%;
+  }
+  .projects dl dt,
+  .recruit-page dl dd {
+    padding-left: 0.2rem;
+  }
+  .projects dl dt i {
+    font-size: .8em;
+    margin-right: 0.2rem
+  }
+  .projects p.right {
+    font-size: 82.5%;
+    margin: 1rem auto;
+  }
   .credentials header {
     background-image: url('img/credential_top-m.png');
   }
   .credentials header .nav-toggle {
     background: rgba(217, 200, 73, 0.8);
   }
+  .equipments table,
+  .credentials table {
+    margin: 0 auto 2rem;
+  }
+  .credentials tbody th {
+    border-right: 0;
+    font-size: 88%;
+    vertical-align: middle;
+    width: 22%;
+  }
+  .credentials tbody tr > td.first-line {
+    border-right: 1px solid #999;
+  }
+  .credentials tbody tr > td:nth-child(2),
+  .credentials tbody tr > td:nth-child(3) {
+    border-left: 0;
+    padding: 0;
+    width: 13%;
+  }
+  .equipments tbody td,
+  .credentials tbody td {
+    border-left: 0;
+    border-right: 1px solid #999;
+    font-size: 88%;
+    padding-right: 0.25rem;
+  }
+  .credentials tbody tr > td.first-line {
+    width: auto;
+  }
+
   .equipments header {
     background-image: url('img/equipment_top-m.png');
   }
@@ -1098,7 +1207,7 @@ p.right {
   }
   .recruit-page dl dd,
   .projects dl dd {
-    margin-left: 1rem;
+    margin-left: 0.3rem;
   }
   .contact dt,
   .equipments tbody tr > td.first-line,
