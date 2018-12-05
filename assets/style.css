@@ -1134,6 +1134,9 @@ p.right {
     letter-spacing: -0.2px;
     margin-left: 0.3rem;
   }
+  .company .gaiyou dl dd a {
+    display: inline;
+  }
   .company .gaiyou dl dd ul.worker li {
     flex-basis: 100%;
   }
@@ -1214,7 +1217,7 @@ p.right {
   .equipments tbody th,
   .credentials tbody th {
     border: 0;
-    border-width: 0.5px 0 0 1px;
+    border-width: 1px 0 0 1px;
     border-style: solid;
     border-color: #666;
     font-size: 88%;
@@ -1226,8 +1229,8 @@ p.right {
   }
   .equipments tbody tr > td.first-line,
   .credentials tbody tr > td.first-line {
-    border-right: 0.5px solid #666;
-    border-top: 0.5px solid #666;
+    border-right: 1px solid #999;
+    border-top: 1px solid #666;
   }
   .credentials tbody tr > td:nth-child(2),
   .credentials tbody tr > td:nth-child(3) {
@@ -1243,7 +1246,7 @@ p.right {
   .equipments tbody td,
   .credentials tbody td {
     border-left: 0;
-    border-right: 0.5px solid #999;
+    border-right: 1px solid #999;
     font-size: 88%;
     padding-right: 0.25rem;
   }
@@ -1253,7 +1256,7 @@ p.right {
   }
   .credentials tbody tr > td:nth-child(3),
   .equipments tbody tr > td:nth-child(3) {
-    border-top: 0.5px solid #666;
+    border-top: 1px solid #666;
   }
   .credentials tbody td,
   .equipments thead td,
