@@ -1463,6 +1463,12 @@ p.right {
   .contact span.required {
     display: inline;
   }
+  .contact input#zipcode1 {
+    min-width: 3rem;
+  }
+  .contact input#zipcode2 {
+    min-width: 5rem;
+  }
 }
 @media (max-width: 729px) {
 
