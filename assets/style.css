@@ -25,9 +25,9 @@ nav ul {
   background: rgba(20, 144, 173, .7);
   font-size: 88%;
   list-style: none;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  padding: 0.5rem 0;
+  padding: 0.5rem 2rem 0.5rem 0;
   margin: 0;
 }
 nav ul li {
@@ -510,7 +510,7 @@ p.right {
   background-image: url('img/bg-blue.png');
   background-repeat: repeat;
   padding: 1rem 0 2rem;
-  margin: 0 auto 2rem;
+  margin: 0 auto 7rem;
   width: 70%;
 }
 .recruit-page .fukuri .row {
@@ -614,16 +614,11 @@ p.right {
   border: 1px solid #01A9CF;
   width: 100%;
 }
-.recruit-page section a {
-  background: #333;
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
+/* .recruit-page section.bottom {
   line-height: normal;
   padding: 0.5rem 1.5rem;
   margin-bottom: 5rem;
-}
+} */
 .contact header {
   background: url('img/contact_top-pc.png') no-repeat;
 }
