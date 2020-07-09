@@ -775,7 +775,7 @@ p.right {
   }
   .page header {
     background-size: contain;
-    padding-bottom: 18.5%;
+    padding-bottom: 21.5%;
   }
   nav ul li:first-child {
     flex-basis: 20%;
@@ -1073,12 +1073,9 @@ p.right {
   .company .greeting, .company .enkaku, .company .gaiyou {
     width: 85%;
   }
-  .page header {
-    background-size: contain;
-    padding-bottom: 21.5%;
-  }
   .company header {
     background-image: url('img/company_top-m.png');
+    background-size: cover;
   }
   h2 {
     font-size: 1.5em;
@@ -1466,6 +1463,15 @@ p.right {
     min-width: 5rem;
   }
 }
-@media (max-width: 729px) {
-
+@media (max-width: 767px) {
+  .page header {
+    background-size: contain;
+    padding-bottom: 23%;
+  }
+}
+@media (max-width: 413px) {
+  .page header {
+    background-size: contain;
+    padding-bottom: 21.5%;
+  }
 }
