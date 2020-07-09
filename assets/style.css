@@ -1321,7 +1321,7 @@ p.right {
   }
   .recruit-page .fukuri {
     padding: 0.5rem 0.5rem 1rem;
-    margin: 0 auto 1rem;
+    margin: 0 auto 3rem;
   }
   .recruit-page .fukuri .row {
     padding: 0 1rem;
@@ -1406,9 +1406,6 @@ p.right {
     font-size: 85%;
     margin-left: 1.2rem;
     text-indent: -0.7rem;
-  }
-  .recruit-page section a {
-    margin-bottom: 2rem;
   }
   .contact .row {
     margin-top: 0;
