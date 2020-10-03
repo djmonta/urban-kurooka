@@ -977,6 +977,7 @@ p.right {
   }
   nav.m-menu ul li:first-child {
     flex-basis: 100%;
+    padding-left: 0;
   }
   nav.m-menu ul li:first-child a {
     width: auto;
@@ -1468,7 +1469,7 @@ p.right {
     min-width: 5rem;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .page header {
     background-size: contain;
     padding-bottom: 23%;
